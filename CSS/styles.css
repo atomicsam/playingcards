@@ -60,7 +60,10 @@ input, select {margin-left:50px}
 .imageLargeLeft {width:300px;height:225px;float:left;margin-right:10px;margin-bottom:10px}
 
 /* History Page  */
-.imageCardsRight {width:120px;height:90px}
+.imageCardsRight {width:120px;height:90px; float: right;}
+#europeanAdoption {margin-left: 5px; width: 475px; float: right; margin-bottom: 10px; margin-top: 5px;}
+#earlyHistory {float: left; width: 475px;margin-right: 5px; margin-bottom: 10px; margin-top: 5px}
+#modernCards {clear: both}
 
 /* Patience Games Page  */
 .imageMediumRight {width:120px;height:90px;float:right;margin-left:10px;margin-bottom:10px}
