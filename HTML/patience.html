@@ -4,7 +4,13 @@
 <head>
 <title>Patience</title>
 <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
-
+<script>
+    function displaySection (section, section2, section3) {
+        document.getElementById(section).style.display="block";
+        document.getElementById(section3).style.display="none";
+        document.getElementById(section2).style.display="none";
+    }
+</script>
 </head>
 
 <body>
@@ -34,13 +40,13 @@
 <h2>Popular Patience Games</h2>
 <p>Click on the names below to read more about each game of patience.</p>
 <p>
-<img class="patienceButtons" src="../images/klondikeButton.png">
-<img class="patienceButtons" src="../images/freecellButton.png">
-<img class="patienceButtons" src="../images/pyramidButton.png">
+<img class="patienceButtons" src="../images/klondikeButton.png" onclick="displaySection('klondike', 'freecell', 'pyramid')">
+<img class="patienceButtons" src="../images/freecellButton.png" onclick="displaySection('freecell', 'klondike', 'pyramid')">
+<img class="patienceButtons" src="../images/pyramidButton.png" onclick="displaySection('pyramid', 'klondike', 'freecell')">
 </p>
 </section>
 
-<section>
+<section id="klondike">
 <img class="patiencePhotos" src="../images/klondikePhoto.jpeg">
 <h2>Klondike</h2>
 <p>Klondike is the best known of the patience games.  It was invented in the late 19th century and was named after the place Klondike, the gold rush area in Canada. Some think it may have been invented by the gold prospectors of the time. </p>
@@ -48,7 +54,7 @@
 <p>The player must build new 4 piles (one for each suit) starting with the ace, then 2, then 3 and so on.  The piles are created as the next cards required to build each pile are discovered.</p>
 </section>
 
-<section>
+<section id="freecell">
 <img class="patiencePhotos" src="../images/freecellPhoto.jpeg">
 <h2>Freecell</h2>
 <p>FreeCell is played using the standard 52-card deck. Compared to most patience games it is very easy to complete the game. All cards are dealt face-up at the beginning of the game.</p>
@@ -61,7 +67,7 @@
 </section>
 
 
-<section>
+<section id="pyramid">
 <img class="patiencePhotos" src="../images/pyramidPhoto.jpeg">
 <h2>Pyramid</h2>
 <p>The object is to remove all the cards from the pyramid to the foundation. </p>
